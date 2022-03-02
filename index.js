@@ -12,15 +12,18 @@ let audios = [
 
 for (let i = 0; i < set.length; i++) {
   set[i].addEventListener("click", () => {
-    var audio = new Audio(audios[i]);
-    audio.play();
+    // var audio = new Audio(audios[i]);
+    // audio.play();
+    makeSound(set[i].innerHTML)
+    buttenAnimation(set[i].innerHTML)
   });
 }
 
 document.addEventListener("keydown", (e) => {
     let keyPressed = e.key;
-    console.log(e);
-    makeSound(keyPressed)
+    
+    makeSound(keyPressed);
+    buttenAnimation(keyPressed)
 });
 
 
@@ -63,3 +66,15 @@ function makeSound(key){
         break;
     }
 }
+
+
+function buttenAnimation(key){
+    let currentBtn = document.querySelector("."+key);
+
+    currentBtn.classList.add("pressed");
+
+    let timer = setTimeout(()=>{
+        currentBtn.classList.remove("pressed")
+    }, 300)
+}
+
