@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
+}
+
+#title {
+  color: white;
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+  margin-top: 5vh;
+}
+
+.set {
+  margin: 15vh auto;
+}
+
+.drum {
+  outline: none;
+  border: 0.5rem solid #404b69;
+  font-size: 3rem;
+  font-family: "Arvo", cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #da0463;
+  text-shadow: 3px 0 #dbedf3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 10%;
+  height: 20vh;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
